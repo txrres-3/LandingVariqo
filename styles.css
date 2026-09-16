@@ -422,7 +422,7 @@ h2 em {
 .about-stamp {
   width: 290px;
   height: 290px;
-  border: 1px solid var(--black);
+  border: 1px solid #000000;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -455,16 +455,18 @@ h2 em {
 .about-stamp:after {
   content: "✦";
   position: absolute;
-  color: var(--black);
+  left: 50%;
+  color: #FFFFFF;
   font-size: 2rem;
+  transform: translateX(-50%);
 }
 
 .about-stamp:before {
-  top: 20px;
+  top: 28px;
 }
 
 .about-stamp:after {
-  bottom: 20px;
+  bottom: 28px;
 }
 
 .about-copy .eyebrow {
