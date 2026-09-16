@@ -83,8 +83,9 @@ button {
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  padding: 4px;
+  padding: 3px;
   overflow: hidden;
+  flex: 0 0 35px;
 }
 
 .brand-mark img {
@@ -272,7 +273,7 @@ h2 em {
 .ticker {
   overflow: hidden;
   background: var(--black);
-  color: var(--yellow);
+  color: var(--white);
   padding: 15px 0;
   white-space: nowrap;
   border-top: 1px solid var(--yellow);
@@ -293,6 +294,10 @@ h2 em {
   color: var(--red);
   font-family: var(--font-body);
   font-style: normal;
+}
+
+.ticker-track span {
+  color: var(--white);
 }
 
 .categories-section,
@@ -640,6 +645,13 @@ h2 em {
 
   .site-header {
     height: 75px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+    padding: 3px;
   }
 
   .menu-toggle {
