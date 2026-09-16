@@ -6,8 +6,8 @@
   --yellow: #ffd700;
   --red: #e11b22;
   --line: rgba(255, 255, 255, 0.24);
-  --font-brand: "Etna Sans Serif", "Arial Narrow", Arial, Helvetica, sans-serif;
-  --font-body: Arial, Helvetica, sans-serif;
+  --font-brand: "Etna Sans Serif", Arial, Helvetica, sans-serif;
+  --font-body: "Etna Sans Serif", Arial, Helvetica, sans-serif;
 }
 
 * {
