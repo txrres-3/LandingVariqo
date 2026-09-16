@@ -201,7 +201,7 @@ h2 em {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 27px;
+  gap: 38px;
 }
 
 .button {
@@ -434,8 +434,8 @@ h2 em {
 .about-logo-frame {
   display: grid;
   place-items: center;
-  width: 172px;
-  height: 172px;
+  width: 210px;
+  height: 210px;
   padding: 16px;
   background: var(--white);
   border: 1px solid var(--black);
@@ -734,8 +734,8 @@ h2 em {
   }
 
   .about-logo-frame {
-    width: 138px;
-    height: 138px;
+    width: 165px;
+    height: 165px;
     padding: 13px;
   }
 
@@ -769,7 +769,7 @@ h2 em {
   .hero-actions {
     align-items: flex-start;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
   }
 
   .category-grid {
