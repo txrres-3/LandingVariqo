@@ -290,9 +290,9 @@ h2 em {
   font-style: italic;
 }
 
-.ticker b {
-  color: #E11B22;
-  font-family: var(--font-body);
+.ticker-star {
+  color: #E11B22 !important;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
@@ -428,6 +428,12 @@ h2 em {
   transform: rotate(-12deg);
   position: relative;
   margin: auto;
+}
+
+.about-stamp::before,
+.about-stamp::after {
+  content: none;
+  display: none;
 }
 
 .about-logo-frame {
