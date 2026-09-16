@@ -6,9 +6,8 @@
   --yellow: #ffd700;
   --red: #e11b22;
   --line: rgba(255, 255, 255, 0.24);
-  /* Replace the first value with a local Etna Sans Serif file when available. */
-  --font-brand: "Etna Sans Serif", "Arial Narrow", Arial, sans-serif;
-  --font-body: "Etna Sans Serif", Arial, sans-serif;
+  --font-brand: Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -69,7 +68,7 @@ button {
   color: inherit;
   text-decoration: none;
   font-family: var(--font-brand);
-  font-size: 1.35rem;
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
   font-weight: 700;
   letter-spacing: -0.06em;
 }
@@ -180,13 +179,6 @@ h2 em {
   font-style: normal;
 }
 
-.hero-intro {
-  max-width: 470px;
-  color: var(--gray);
-  margin: 29px 0 31px;
-  font-size: 1.02rem;
-}
-
 .hero-actions {
   display: flex;
   align-items: center;
@@ -286,7 +278,8 @@ h2 em {
 }
 
 .art-card-small {
-  background: var(--blue);
+  background: var(--yellow);
+  color: var(--black);
   width: 145px;
   height: 150px;
   right: 28px;
@@ -298,7 +291,7 @@ h2 em {
 }
 
 .art-card-small strong {
-  color: var(--yellow);
+  color: var(--red);
   font-style: italic;
 }
 
@@ -347,10 +340,10 @@ h2 em {
 .flag-ribbon {
   position: absolute;
   top: 8px;
-  left: 25px;
+  left: 10px;
   display: flex;
-  width: 132px;
-  height: 13px;
+  width: 290px;
+  height: 108px;
   transform: rotate(-7deg);
   z-index: 2;
   border: 1px solid var(--white);
@@ -375,8 +368,8 @@ h2 em {
 
 .ticker {
   overflow: hidden;
-  background: var(--blue);
-  color: var(--white);
+  background: var(--yellow);
+  color: var(--black);
   padding: 15px 0;
   white-space: nowrap;
   border-top: 1px solid var(--white);
@@ -394,7 +387,7 @@ h2 em {
 }
 
 .ticker b {
-  color: var(--yellow);
+  color: var(--red);
   font-family: var(--font-body);
   font-style: normal;
 }
@@ -500,11 +493,15 @@ h2 em {
 }
 
 .about-section {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--yellow);
+  color: var(--black);
   padding: 135px 0;
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
+}
+
+.about-section h2 em {
+  color: var(--red);
 }
 
 .about-layout {
@@ -517,7 +514,7 @@ h2 em {
 .about-stamp {
   width: 290px;
   height: 290px;
-  border: 1px solid var(--yellow);
+  border: 1px solid var(--black);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -530,7 +527,7 @@ h2 em {
 .about-stamp:after {
   content: "✦";
   position: absolute;
-  color: var(--yellow);
+  color: var(--black);
   font-size: 2rem;
 }
 
@@ -547,7 +544,7 @@ h2 em {
   font-family: var(--font-brand);
   font-size: 2.8rem;
   line-height: 0.8;
-  color: var(--yellow);
+  color: var(--black);
   font-style: italic;
 }
 
@@ -559,7 +556,7 @@ h2 em {
 }
 
 .about-copy .eyebrow {
-  color: var(--white);
+  color: var(--black);
 }
 
 .about-copy h2 {
@@ -567,15 +564,15 @@ h2 em {
 }
 
 .about-copy > p:not(.eyebrow) {
-  color: var(--white);
+  color: var(--black);
   max-width: 560px;
   font-size: 0.95rem;
 }
 
 .dark-link {
   display: inline-block;
-  color: var(--white);
-  border-color: var(--white);
+  color: var(--black);
+  border-color: var(--black);
   margin-top: 14px;
 }
 
@@ -659,16 +656,6 @@ h2 em {
 .button-light {
   background: var(--white);
   color: var(--black);
-}
-
-.contact-star {
-  font-size: 8rem;
-  line-height: 0.5;
-  position: absolute;
-  right: 8%;
-  top: 0;
-  color: var(--yellow);
-  transform: rotate(16deg);
 }
 
 .site-footer {
@@ -859,12 +846,6 @@ h2 em {
 
   .contact-action {
     margin-top: 30px;
-  }
-
-  .contact-star {
-    right: 0;
-    top: 10px;
-    font-size: 6rem;
   }
 
   .footer-inner {
