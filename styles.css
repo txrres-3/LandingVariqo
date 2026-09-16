@@ -273,7 +273,7 @@ h2 em {
 
 .ticker {
   overflow: hidden;
-  background: var(--white);
+  background-color: #B7B7B7;
   color: var(--black);
   padding: 15px 0;
   white-space: nowrap;
@@ -455,17 +455,18 @@ h2 em {
   content: "✦";
   position: absolute;
   left: 50%;
-  color: #FFFFFF;
   font-size: 2rem;
   transform: translateX(-50%);
 }
 
 .about-stamp:before {
   top: 28px;
+  color: #E11B22;
 }
 
 .about-stamp:after {
   bottom: 28px;
+  color: #E11B22;
 }
 
 .about-copy .eyebrow {
