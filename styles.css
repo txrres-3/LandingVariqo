@@ -201,6 +201,7 @@ h2 em {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 42px;
   gap: 38px;
 }
 
@@ -272,12 +273,11 @@ h2 em {
 
 .ticker {
   overflow: hidden;
-  background: var(--black);
-  color: var(--white);
+  background: var(--white);
+  color: var(--black);
   padding: 15px 0;
   white-space: nowrap;
-  border-top: 1px solid var(--yellow);
-  border-bottom: 1px solid var(--yellow);
+  border-top: 1px solid var(--gray);
 }
 
 .ticker-track {
@@ -291,13 +291,13 @@ h2 em {
 }
 
 .ticker b {
-  color: var(--red);
+  color: var(--black);
   font-family: var(--font-body);
   font-style: normal;
 }
 
 .ticker-track span {
-  color: var(--white);
+  color: #000000;
 }
 
 .categories-section,
@@ -422,7 +422,6 @@ h2 em {
 .about-stamp {
   width: 290px;
   height: 290px;
-  border: 1px solid #000000;
   border-radius: 50%;
   display: grid;
   place-items: center;
