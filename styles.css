@@ -114,9 +114,17 @@ h2 em {
 }
 
 .nav-cta {
-  border: 1px solid var(--white);
+  background: var(--gray);
+  border: 1px solid var(--gray);
   border-radius: 100px;
+  color: var(--black) !important;
   padding: 11px 17px;
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  background: var(--white);
+  border-color: var(--white);
 }
 
 .nav-cta span {
@@ -133,11 +141,15 @@ h2 em {
 
 .hero {
   min-height: 600px;
-  display: grid;
-  grid-template-columns: 1fr 0.9fr;
+  display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: center;
   padding: 65px 0 85px;
+}
+
+.hero-copy {
+  max-width: 900px;
+  text-align: center;
 }
 
 .eyebrow {
@@ -151,9 +163,6 @@ h2 em {
 
 .hero h1,
 h2,
-.art-card-main p,
-.art-card-small,
-.floating-note,
 .ticker-track,
 .category-card h3,
 .founder-card h3,
@@ -172,6 +181,7 @@ h2 {
 .hero h1 {
   font-size: clamp(3.4rem, 6vw, 5.65rem);
   max-width: 710px;
+  margin-inline: auto;
 }
 
 .hero h1 em,
@@ -182,6 +192,7 @@ h2 em {
 .hero-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 27px;
 }
 
@@ -204,8 +215,13 @@ h2 em {
 }
 
 .button-primary {
-  background: var(--yellow);
+  background: var(--gray);
   color: var(--black);
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: var(--white);
 }
 
 .text-link {
@@ -221,149 +237,27 @@ h2 em {
   margin-left: 8px;
 }
 
-.hero-art {
-  position: relative;
-  height: 450px;
-  isolation: isolate;
+.edge-flag {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background: linear-gradient(
+    to bottom,
+    var(--yellow) 0 50%,
+    var(--blue) 50% 75%,
+    var(--red) 75% 100%
+  );
+  pointer-events: none;
+  z-index: 20;
 }
 
-.sun-shape {
-  position: absolute;
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  background: var(--yellow);
-  right: 50px;
-  top: 25px;
-  z-index: -1;
+.edge-flag-left {
+  left: 0;
 }
 
-.art-card {
-  position: absolute;
-  border: 1px solid var(--white);
-  box-shadow: 9px 10px 0 var(--blue);
-}
-
-.art-card-main {
-  width: 280px;
-  height: 330px;
-  background: var(--red);
-  left: 65px;
-  top: 70px;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transform: rotate(-7deg);
-}
-
-.art-card-main p {
-  font-size: 2.1rem;
-  line-height: 1.02;
-  margin: 0;
-}
-
-.art-card-main strong {
-  font-style: italic;
-}
-
-.art-sparkle {
-  font-size: 2.5rem;
-}
-
-.art-tag {
-  font-size: 0.6rem;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-}
-
-.art-card-small {
-  background: var(--yellow);
-  color: var(--black);
-  width: 145px;
-  height: 150px;
-  right: 28px;
-  bottom: 25px;
-  padding: 18px;
-  transform: rotate(9deg);
-  font-size: 1.3rem;
-  line-height: 0.95;
-}
-
-.art-card-small strong {
-  color: var(--red);
-  font-style: italic;
-}
-
-.art-orbit {
-  position: absolute;
-  border: 1px solid var(--gray);
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.orbit-one {
-  width: 410px;
-  height: 170px;
-  right: -8px;
-  top: 120px;
-  transform: rotate(-32deg);
-}
-
-.orbit-two {
-  width: 340px;
-  height: 130px;
-  right: 20px;
-  top: 190px;
-  transform: rotate(20deg);
-}
-
-.floating-note {
-  position: absolute;
-  font-style: italic;
-  font-size: 1.2rem;
-}
-
-.note-one {
+.edge-flag-right {
   right: 0;
-  top: 40px;
-  transform: rotate(8deg);
-}
-
-.note-two {
-  left: 5px;
-  bottom: 13px;
-  font-size: 2.3rem;
-  color: var(--yellow);
-}
-
-.flag-ribbon {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  display: flex;
-  width: 290px;
-  height: 108px;
-  transform: rotate(-7deg);
-  z-index: 2;
-  border: 1px solid var(--white);
-}
-
-.flag-ribbon span {
-  flex: 1;
-}
-
-.flag-yellow {
-  background: var(--yellow);
-  flex: 2 !important;
-}
-
-.flag-blue {
-  background: var(--blue);
-}
-
-.flag-red {
-  background: var(--red);
 }
 
 .ticker {
@@ -778,31 +672,11 @@ h2 em {
   }
 
   .hero {
-    grid-template-columns: 1fr;
-    gap: 35px;
     padding: 60px 0 80px;
   }
 
   .hero h1 {
     font-size: clamp(3rem, 13vw, 5rem);
-  }
-
-  .hero-art {
-    height: 390px;
-    max-width: 480px;
-    width: 100%;
-    margin: auto;
-  }
-
-  .art-card-main {
-    left: 9%;
-    top: 48px;
-  }
-
-  .sun-shape {
-    right: 7%;
-    width: 260px;
-    height: 260px;
   }
 
   .section-heading {
