@@ -38,7 +38,7 @@ h1, h2 { margin: 0; font-weight: 700; letter-spacing: -.035em; line-height: .95;
 h1 { font-size: clamp(4.6rem, 12vw, 10rem); }
 h1 em, h2 em { color: var(--gray); font-style: normal; }
 .hero h1 em { color: var(--yellow); }
-.hero-intro { max-width: 240px; padding-bottom: 8px; }
+.hero-intro { max-width: 240px; padding-bottom: 28px; }
 .hero-index { color: var(--gray); font-size: .7rem; font-weight: 700; margin: 0 0 20px; }
 .hero-index span { color: var(--white); }
 .hero-intro > p:not(.hero-index) { font-size: 1rem; margin: 0 0 28px; }
@@ -103,7 +103,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 6.4rem); }
   .proposal-hero { min-height: 590px; padding: 55px 0 25px; }
   .hero-grid, .statement, .method-layout { grid-template-columns: 1fr; gap: 45px; }
   .hero-grid { margin-top: 55px; }
-  .hero-intro { max-width: 330px; }
+  .hero-intro { max-width: 330px; padding-bottom: 28px; }
   .statement { padding-top: 110px; padding-bottom: 70px; }
   .statement-copy > p { margin-left: 0; }
   .platforms { padding-bottom: 100px; }
