@@ -47,7 +47,8 @@ h1 em, h2 em { color: var(--yellow); font-style: normal; }
 .hero-foot { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 15px; color: var(--gray); font-size: .67rem; text-transform: uppercase; letter-spacing: .13em; }
 .hero-foot p { margin: 0; }
 .statement { display: block; padding-top: 165px; padding-bottom: 95px; text-align: center; }
-.statement-copy { max-width: 680px; margin: 0 auto; }
+.statement-copy { width: 100%; max-width: 680px; margin: 0 auto; text-align: center; }
+.statement-copy h2 { width: 100%; text-align: center; }
 h2 { font-size: clamp(3.5rem, 7vw, 6.4rem); }
 .statement-copy > p { max-width: 400px; margin: 38px auto 0; color: var(--gray); font-size: .95rem; }
 .platforms { padding-bottom: 155px; }
