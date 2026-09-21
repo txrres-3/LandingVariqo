@@ -27,13 +27,12 @@ button { font: inherit; }
 .brand-mark img { width: 100%; height: 100%; object-fit: contain; }
 .header-back { padding: 10px 15px; border: 1px solid var(--gray); border-radius: 999px; color: var(--black); background: var(--gray); }
 .header-back:hover, .header-back:focus-visible { background: var(--white); border-color: var(--white); }
-.proposal-hero { width: min(1240px, calc(100% - 64px)); min-height: 650px; margin: auto; padding: 78px 40px 30px; display: flex; flex-direction: column; justify-content: space-between; }
+.proposal-hero { width: min(1240px, calc(100% - 64px)); min-height: 650px; margin: auto; padding: 110px 40px 30px; display: flex; flex-direction: column; justify-content: space-between; }
 .hero-kicker, .section-label, .platform-type { text-transform: uppercase; letter-spacing: .16em; font-size: .66rem; font-weight: 700; color: var(--gray); }
-.hero-kicker { color: var(--yellow); }
 .dot { width: 7px; height: 7px; display: inline-block; margin-right: 8px; background: var(--yellow); border-radius: 50%; }
 .hero-grid { display: grid; grid-template-columns: 1.4fr .6fr; align-items: end; gap: 50px; margin-top: 65px; }
 h1, h2, h3, .platform-tabs { font-family: var(--font); }
-h1, h2 { margin: 0; font-weight: 700; letter-spacing: -.035em; line-height: .95; }
+h1, h2 { margin: 0; font-weight: 700; letter-spacing: -.075em; line-height: .92; }
 h1 { font-size: clamp(4.6rem, 12vw, 10rem); }
 h1 em, h2 em { color: var(--gray); font-style: normal; }
 .hero h1 em { color: var(--yellow); }
@@ -66,7 +65,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 6.4rem); }
 .platform-panel[data-panel="tiktok"] { border-left-color: var(--red); }
 @keyframes panel-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .panel-number { color: var(--gray); font-size: .7rem; }
-.panel-main h3 { margin: 8px 0 22px; font-size: clamp(3.5rem, 7vw, 6.5rem); letter-spacing: -.04em; line-height: .9; }
+.panel-main h3 { margin: 8px 0 22px; font-size: clamp(3.5rem, 7vw, 6.5rem); letter-spacing: -.08em; line-height: .85; }
 .panel-description { max-width: 400px; margin: 0; color: var(--gray); font-size: .95rem; }
 .deliverables { align-self: end; margin: 0; padding: 0; list-style: none; font-size: .82rem; }
 .deliverables li { border-top: 1px solid var(--line); padding: 12px 0; }
@@ -99,7 +98,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 6.4rem); }
   .section-wrap, .proposal-header, .proposal-hero { width: min(100% - 40px, 600px); }
   .proposal-header { min-height: 76px; }
   .proposal-header nav a:not(.header-back) { display: none; }
-  .proposal-hero { min-height: 590px; padding: 55px 0 25px; }
+  .proposal-hero { min-height: 590px; padding: 75px 0 25px; }
   .hero-grid, .statement, .method-layout { grid-template-columns: 1fr; gap: 45px; }
   .hero-grid { margin-top: 55px; }
   .hero-intro { max-width: 330px; }
