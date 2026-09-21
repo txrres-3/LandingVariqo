@@ -6,12 +6,13 @@
   --yellow: #ffd700;
   --red: #e11b22;
   --line: rgba(255, 255, 255, 0.25);
-  --font: "Etna Sans Serif", Arial, Helvetica, sans-serif;
+  --font-brand: "Etna Sans Serif", Arial, Helvetica, sans-serif;
+  --font-body: "Etna Sans Serif", Arial, Helvetica, sans-serif;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--black); color: var(--white); font-family: var(--font); line-height: 1.5; overflow-x: hidden; }
+body { margin: 0; background: var(--black); color: var(--white); font-family: var(--font-body); line-height: 1.5; overflow-x: hidden; }
 body::before { content: ""; display: block; height: 5px; background: linear-gradient(to right, var(--yellow) 0 50%, var(--blue) 50% 75%, var(--red) 75%); }
 a, button { -webkit-tap-highlight-color: transparent; }
 a { color: inherit; }
@@ -32,7 +33,7 @@ button { font: inherit; }
 .hero-kicker { color: var(--yellow); }
 .dot { width: 7px; height: 7px; display: inline-block; margin-right: 8px; background: var(--yellow); border-radius: 50%; }
 .hero-grid { display: grid; grid-template-columns: 1.4fr .6fr; align-items: end; gap: 50px; margin-top: 65px; }
-h1, h2, h3, .platform-tabs { font-family: var(--font); }
+h1, h2, h3, .platform-tabs { font-family: var(--font-brand); }
 h1, h2 { margin: 0; font-weight: 700; letter-spacing: -.035em; line-height: .95; }
 h1 { font-size: clamp(4.6rem, 12vw, 10rem); }
 h1 em, h2 em { color: var(--gray); font-style: normal; }
