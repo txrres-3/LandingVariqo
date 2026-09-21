@@ -281,13 +281,30 @@ h2 em {
 }
 
 .ticker-track {
-  display: flex;
-  justify-content: space-around;
+  display: inline-flex;
   align-items: center;
-  min-width: 850px;
-  gap: 32px;
+  width: max-content;
   font-size: 1.1rem;
   font-style: italic;
+  animation: ticker-scroll 24s linear infinite;
+  will-change: transform;
+}
+
+.ticker-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  padding-right: 32px;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .ticker-star {
@@ -590,9 +607,11 @@ h2 em {
 }
 
 .footer-contact a {
+  display: block;
   color: var(--white);
   font-size: 0.85rem;
   font-weight: 700;
+  margin-top: 4px;
 }
 
 .copyright {
@@ -616,6 +635,10 @@ h2 em {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .ticker-track {
+    animation: none;
   }
 
   *,
