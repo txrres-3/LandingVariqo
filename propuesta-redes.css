@@ -33,10 +33,10 @@ button { font: inherit; }
 .dot { width: 7px; height: 7px; display: inline-block; margin-right: 8px; background: var(--yellow); border-radius: 50%; }
 .hero-grid { display: grid; grid-template-columns: 1.4fr .6fr; align-items: end; gap: 50px; margin-top: 65px; }
 h1, h2, h3, .platform-tabs { font-family: var(--font); }
-h1, h2 { margin: 0; font-family: var(--font); font-weight: 700; letter-spacing: .015em; line-height: .95; }
+h1, h2 { margin: 0; font-weight: 700; letter-spacing: -.035em; line-height: .95; }
 h1 { font-size: clamp(4.6rem, 12vw, 10rem); }
 h1 em, h2 em { color: var(--gray); font-style: normal; }
-.hero h1, .hero h1 em { color: var(--yellow); }
+.hero h1 em { color: var(--yellow); }
 .hero-intro { max-width: 240px; padding-bottom: 8px; }
 .hero-index { color: var(--gray); font-size: .7rem; font-weight: 700; margin: 0 0 20px; }
 .hero-index span { color: var(--white); }
@@ -66,7 +66,7 @@ h2 { font-size: clamp(3.5rem, 7vw, 6.4rem); }
 .platform-panel[data-panel="tiktok"] { border-left-color: var(--red); }
 @keyframes panel-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .panel-number { color: var(--gray); font-size: .7rem; }
-.panel-main h3 { margin: 8px 0 22px; font-family: var(--font); font-size: clamp(3.5rem, 7vw, 6.5rem); letter-spacing: .015em; line-height: .9; }
+.panel-main h3 { margin: 8px 0 22px; font-size: clamp(3.5rem, 7vw, 6.5rem); letter-spacing: -.04em; line-height: .9; }
 .panel-description { max-width: 400px; margin: 0; color: var(--gray); font-size: .95rem; }
 .deliverables { align-self: end; margin: 0; padding: 0; list-style: none; font-size: .82rem; }
 .deliverables li { border-top: 1px solid var(--line); padding: 12px 0; }
